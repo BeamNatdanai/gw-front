@@ -102,6 +102,11 @@
 
     .menu-mobile-zone {margin-top: 53%;}
 
+    .gw-btn-lg-main {
+      min-width: 134px;
+      max-width: 150px;
+  }
+
 }
 
 @media screen and (max-height: 450px) {
