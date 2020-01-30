@@ -215,6 +215,26 @@
         background: #F4CD5F;
     }
 
+    .gw-btn-main-small {
+        margin:0;
+        font-family: "Noto Sans Thai Bold";
+        font-weight: 900;
+        font-size: 14px;
+        border-radius: 18px;
+        height: 30px;
+        min-width: 80px;
+        max-width: 110px;
+        color: #010b13;
+        border: 2px solid #F4CD5F;
+        background: #F4CD5F;
+    }
+
+    .gw-btn-main-small:hover{
+        color: #ae1501;
+        border: 3px solid #ae1501;
+        background: #F4CD5F;
+    }
+
     .gw-btn-lg-main {
         margin:0;
         font-family: "Noto Sans Thai Bold";
@@ -309,6 +329,17 @@
         display: inline-block;
     }
 
+    .gw-input-small {
+        font-family: "Noto Sans Thai";
+        font-weight: 900;
+        font-size: 14px;
+        width: 100%;
+        border: none;
+        border-radius: 5px;
+        padding: 4px 12px;
+        margin: 4px 0;
+        display: inline-block;
+    }
 
 /* End Component */
 
@@ -419,7 +450,53 @@
         margin-top: 15px;
         margin-bottom: 15px;
         width: 100%;
-        height: 315px;
+        height: 460px;
     }
 
 /* End Specifically */
+
+
+/* external class */
+
+/* .ant-popover-title {
+    min-width: 177px;
+    min-height: 32px;
+    margin: 0;
+    padding: 5px 16px 4px;
+    color: #f5f5f5;
+    font-weight: 500;
+    border-bottom: 1px solid #e8e8e8;
+    background: #010b13;
+} */
+
+.ant-popover-title {
+    min-width: 177px;
+    min-height: 32px;
+    margin: 0;
+    padding: 5px 16px 4px;
+    color: #f5f5f5;
+    font-weight: 500;
+    border-bottom: 1px solid #F4CD5F;
+    background-color: #1a1a1a;
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
+}
+
+.ant-popover-inner-content {
+    padding: 12px 16px;
+    color: #1a1a1a;
+    background-color: #1a1a1a;
+    border-bottom-left-radius: 3px;
+    border-bottom-right-radius: 3px;
+}
+
+.ant-popover-placement-bottom > .ant-popover-content > .ant-popover-arrow, .ant-popover-placement-bottomLeft > .ant-popover-content > .ant-popover-arrow, .ant-popover-placement-bottomRight > .ant-popover-content > .ant-popover-arrow {
+    top: 6px;
+    border-top-color: #1a1a1a;
+    border-right-color: transparent;
+    border-bottom-color: transparent;
+    border-left-color: #1a1a1a;
+    -webkit-box-shadow: -2px -2px 5px rgba(0, 0, 0, 0.06);
+    box-shadow: -2px -2px 5px rgba(0, 0, 0, 0.06);
+}
+

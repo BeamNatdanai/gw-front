@@ -32,8 +32,7 @@ const Home = (props) => {
                             <div className="container">
                                 <div className="row">
                                     <div className="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-                                        <img src="/static/images/games/img_cardgame.jpg" />
-                                        {/* <iframe className="myIframe"  src="https://www.youtube.com/embed/Ze07T5VScVg" frameBorder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe> */}
+                                        <Link href="/game/card"><img className="pointer" style={{width:'100%',height:'auto'}} src="/static/images/games/img_cardgame.jpg" /></Link>
                                     </div>
                                     <div className="col-xs-12 col-sm-12 col-md-12 col-lg-12">
                                         <center><div style={{marginTop:20,width:200}}><Link href="/game/card"><button className="gw-btn-play-block pointer">เล่นเกมส์</button></Link></div></center>

@@ -52,7 +52,12 @@
 */
   
 @media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
-
+    .gw-body-dark {
+        background-color: #333333;
+        height: auto;
+        width: 100%;
+        text-align: center;
+    }
 }
   
   /* 
@@ -62,6 +67,12 @@
   
 @media (min-width: 481px) and (max-width: 767px) {
 
+    .gw-body-dark {
+        background-color: #333333;
+        height: auto;
+        width: 100%;
+        text-align: center;
+    }
 
 }
   
@@ -122,8 +133,8 @@
     }
 
     .myIframe {
-      width: 290px;
-      height: 187px;
+      width: 90%;
+      height: 188px;
     }
 
 }
