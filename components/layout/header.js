@@ -38,12 +38,12 @@ const Header = (props) => {
                         <div className="pull-right">
                             {(context.state.token === null ? 
                                 <div className="menu-nav-zone">
-                                    <Link href="/signin"><a><button style={{marginRight:5}} className="gw-btn-defualt btm-menu pointer"  >เข้าสู่ระบบ</button></a></Link>
-                                    <Link href="/signup"><a><button style={{marginRight:8}} className="gw-btn-defualt btm-menu pointer" >ทดลอง</button></a></Link>
+                                    <Link href="/signin"><a><button style={{marginRight:5}} className="gw-btn-default btm-menu pointer"  >เข้าสู่ระบบ</button></a></Link>
+                                    <Link href="/signup"><a><button style={{marginRight:8}} className="gw-btn-default btm-menu pointer" >ทดลอง</button></a></Link>
                                 </div>
                             :
                                 <div className="menu-mobile-zone" >
-                                    <img className="menu-icon pointer" style={{marginLeft:10}} src="/static/images/header/menu_defualt.svg" onClick={()=>{handleClickMenu()}} />
+                                    <img className="menu-icon pointer" style={{marginLeft:10}} src="/static/images/header/menu_default.svg" onClick={()=>{handleClickMenu()}} />
                                 </div>
                             )}
                         </div>

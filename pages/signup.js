@@ -38,7 +38,7 @@ const Signup = (props) => {
                 </div>
                 <div className="row">
                     <div className="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-                        <p className="gw-text-h2 white-gold gw-text-defualt">ลงทะเบียน</p>
+                        <p className="gw-text-h2 white-gold gw-text-default">ลงทะเบียน</p>
                     </div>
                     <div className="col-xs-12 col-sm-12 col-md-12 col-lg-12">
                         <div className="gw-form">

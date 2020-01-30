@@ -32,7 +32,7 @@ const Home = (props) => {
                             <p className="gw-text-h2">Hello World หน้าหลัก !{context.state.token}</p>
                             </div>
                             <p className="gw-text-h3">context : {context.state.name}</p>
-                            <button onClick={()=>{context.updateValue('name','Good Bye')}} className="gw-btn-defualt pointer">Click Me !</button>
+                            <button onClick={()=>{context.updateValue('name','Good Bye')}} className="gw-btn-default pointer">Click Me !</button>
                         </div>
                     </Layout>
                 </div>
