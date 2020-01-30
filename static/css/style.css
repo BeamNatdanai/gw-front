@@ -206,7 +206,27 @@
         background: #F4CD5F;
     }
 
-    .gw-btn-defualt {
+    .gw-btn-lg-main {
+        margin:0;
+        font-family: "Noto Sans Thai Bold";
+        font-weight: 900;
+        font-size: 19px;
+        border-radius: 18px;
+        height: 42px;
+        min-width: 150px;
+        max-width: 180px;
+        color: #010b13;
+        border: 2px solid #F4CD5F;
+        background: #F4CD5F;
+    }
+
+    .gw-btn-lg-main:hover{
+        color: #ae1501;
+        border: 3px solid #ae1501;
+        background: #F4CD5F;
+    }
+
+    .gw-btn-default {
         margin:0;
         font-family: "Noto Sans Thai Bold";
         font-weight: 900;
