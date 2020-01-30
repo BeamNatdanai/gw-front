@@ -11,6 +11,7 @@ import { isEmpty } from '../lib/func';
 const Home = (props) => {
 
     useEffect(()=>{
+
         const mySess = getItem(sess.name)
         if(mySess.token === null){
             Router.push('/')
@@ -27,12 +28,18 @@ const Home = (props) => {
                     </Head>
                     <Layout>
                         <div className="gw-body-dark">
-                            <br/><br/>
+                            <br/><br/><br/>
                             <div className="container">
-                            <p className="gw-text-h2">Hello World หน้าหลัก !{context.state.token}</p>
+                                <div className="row">
+                                    <div className="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                                        <img src="/static/images/games/img_cardgame.jpg" />
+                                        {/* <iframe className="myIframe"  src="https://www.youtube.com/embed/Ze07T5VScVg" frameBorder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe> */}
+                                    </div>
+                                    <div className="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                                        <center><div style={{marginTop:20,width:200}}><Link href="/game/card"><button className="gw-btn-play-block pointer">เล่นเกมส์</button></Link></div></center>
+                                    </div>
+                                </div>
                             </div>
-                            <p className="gw-text-h3">context : {context.state.name}</p>
-                            <button onClick={()=>{context.updateValue('name','Good Bye')}} className="gw-btn-default pointer">Click Me !</button>
                         </div>
                     </Layout>
                 </div>

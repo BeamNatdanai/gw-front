@@ -13,6 +13,7 @@ class MyDocument extends Document {
           <link rel="icon" type="image/png" sizes="36x36" href="/static/images/logo/joystick.png"></link>
           <link rel="stylesheet" href="/static/css/bootstrap.css" />
           <link rel="stylesheet" href="/static/css/style.css" />
+          <link rel="stylesheet" href="/static/css/game-card.css" />
           <link rel="stylesheet" href="/static/css/media-query.css" />
         </Head>
         <body>
