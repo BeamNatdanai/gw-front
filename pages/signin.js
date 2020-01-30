@@ -24,6 +24,7 @@ const Signin = (props) => {
             _id: '19293810',
             name: 'Jonh',
             username: member_username,
+            tel: '0835608224',
             credit: 5000,
             token: 'HF1037FHHRjj0912',
         }
@@ -32,6 +33,7 @@ const Signin = (props) => {
             _id: '19293810',
             name: 'Jonh',
             username: member_username,
+            tel: '0835608224',
             credit: 5000,
             token: 'HF1037FHHRjj0912',
         })

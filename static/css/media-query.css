@@ -30,6 +30,12 @@
   
 @media (min-width: 768px) and (max-width: 1024px) {
 
+    .gw-logo {
+        padding-top: 10%;
+        font-size: 24px;
+    }
+
+    .gw-form {width: 60%;}
 
 }
   
@@ -39,7 +45,6 @@
 */
   
 @media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
-
 
 }
   
@@ -60,14 +65,46 @@
   
 @media (min-width: 320px) and (max-width: 480px) {
 
-    .gw-logo {
-        padding-top: 10%;
-        font-size: 24px;
+    .gw-container-big {
+        padding-left: 3%;
+        padding-right: 3%;
     }
+
+    .gw-logo {
+        padding-top: 20%;
+        font-size: 19px;
+    }
+
+    .gw-form {width: 92%;}
+
+    .gw-btn-main {
+      min-width: 83px;
+      max-width: 150px;
+    }
+
+    .btm-menu {
+      font-size: 13px;
+      min-width: 66px;
+      max-width: 72px;
+      height: 30px;
+    }
+
+    .menu-nav-zone {
+      position: relative;
+      margin: 0;
+      margin-top: 16%;
+    }
+
+    .menu-icon {
+      width: 33px;
+      height: auto;
+    }
+
+    .menu-mobile-zone {margin-top: 53%;}
 
 }
 
 @media screen and (max-height: 450px) {
     .sidebar {padding-top: 15px;}
     .sidebar a {font-size: 18px;}
-  }
+}

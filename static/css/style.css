@@ -67,6 +67,10 @@
     .white-gold {color:#eaed86;}
     .dark-gold {color:#F4CD5F;}
 
+    .text-shadow-gold{
+        text-shadow: -1px 0 #F4CD5F, 0 1px #F4CD5F, 1px 0 #F4CD5F, 0 -1px #F4CD5F;
+    }
+
     /* Text */
     .gw-text-h0 {
         font-family: "Noto Sans Thai Bold";
@@ -269,6 +273,12 @@
         position: relative;
         margin: 0;
         margin-top: 7%;
+    }
+
+    .menu-mobile-zone {
+        position: relative;
+        margin: 0;
+        margin-top: 34%;
     }
 
     .gw-content {

@@ -13,6 +13,7 @@ class MyApp extends App {
             _id: null,
             name: null,
             username: null,
+            tel: null,
             credit: 0,
             token: null,
         };
@@ -24,6 +25,7 @@ class MyApp extends App {
                 _id: null,
                 name: null,
                 username: null,
+                tel: null,
                 credit: 0,
                 token: null,
             })
@@ -33,6 +35,7 @@ class MyApp extends App {
                 _id: mySess._id,
                 name: mySess.name,
                 username: mySess.username,
+                tel: mySess.tel,
                 credit: mySess.credit,
                 token: mySess.token,
             })
@@ -47,6 +50,7 @@ class MyApp extends App {
                     _id: null,
                     name: null,
                     username: null,
+                    tel: null,
                     credit: 0,
                     token: null
                 })
@@ -56,6 +60,7 @@ class MyApp extends App {
                     _id: mySess._id,
                     name: mySess.name,
                     username: mySess.username,
+                    tel: mySess.tel,
                     credit: mySess.credit,
                     token: mySess.token,
                 })
