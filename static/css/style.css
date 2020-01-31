@@ -1,9 +1,23 @@
+
+
 /* General */
 
     hr {
         margin: 0;
         border-top: 0.8px solid #010b13;
         box-shadow: 2px 1px 3px #010b13;
+    }
+
+    .text-center {
+        text-align: center;
+    }
+
+    .text-left {
+        text-align: left;
+    }
+
+    .text-right {
+        text-align: right;
     }
 
     .space-20 {height: 20px;}
@@ -40,7 +54,7 @@
 
     .gw-body-dark {
         background-color: #333333;
-        height: 100vh;
+        height: auto;
         width: 100%;
         text-align: center;
     }
@@ -71,6 +85,7 @@
     .danger {color:#b60c26;}
     .default {color:#f5f5f5;}
     .black {color:#010b13;}
+    .black-orgin {color: #000;}
     .black-soft {color:#333333;}
     .red {color:#ae1501;}
     .white-gold {color:#eaed86;}
@@ -78,6 +93,20 @@
 
     .text-shadow-gold{
         text-shadow: -1px 0 #F4CD5F, 0 1px #F4CD5F, 1px 0 #F4CD5F, 0 -1px #F4CD5F;
+    }
+
+    .text-shadow-white{
+        text-shadow: -1px 0 #fff, 0 1px #fff, 1px 0 #fff, 0 -1px #fff;
+    }
+
+    .under-line-text {
+        /* display: block; */
+        /* border-bottom: 2px solid #ae1501; */
+        /* box-shadow: 0px 0 #F4CD5F, 0 0px #F4CD5F, 0px 0 #F4CD5F, 0 1px #F4CD5F; */
+        text-decoration: underline;
+        -webkit-text-underline-position: under;
+        -ms-text-underline-position: below;
+        text-underline-position: under; 
     }
 
     /* Text */
@@ -308,6 +337,7 @@
         border: 3px solid #F4CD5F;
         background: #F4CD5F;
         text-shadow: 1px 1px 0px #010b13;
+        box-shadow: 1px 5px 21px #333
     }
 
     .gw-btn-play-block:hover{
@@ -329,7 +359,7 @@
         display: inline-block;
     }
 
-    .gw-input-small {
+    .gw-input-block {
         font-family: "Noto Sans Thai";
         font-weight: 900;
         font-size: 14px;
@@ -339,6 +369,43 @@
         padding: 4px 12px;
         margin: 4px 0;
         display: inline-block;
+    }
+
+    .gw-datepicker-start {
+        /* float: right; */
+    }
+
+    .gw-datepicker-end {
+        /* float: right; */
+    }
+
+    .gw-btn-search {
+        /* float: left; */
+        padding: 5px;
+        margin: 2px;
+        width: 140px;
+        font-family:'Noto Sans Thai Bold';
+    }
+
+    /* card */
+    .gw-card-top {
+        position: relative;
+        width: 100%;
+        background: #ae1501;
+        padding: 15px 20px;
+        box-shadow: -4px 2px 11px #010b13;
+        border-top-left-radius: 8px;
+        border-top-right-radius: 8px;
+    }
+    
+    .gw-card-bottom {
+        position: relative;
+        width: 100%;
+        background: #ae1501;
+        padding: 15px 20px;
+        box-shadow: -4px 2px 9px #010b13;
+        border-bottom-left-radius: 8px;
+        border-bottom-right-radius: 8px;
     }
 
 /* End Component */
@@ -498,5 +565,13 @@
     border-left-color: #1a1a1a;
     -webkit-box-shadow: -2px -2px 5px rgba(0, 0, 0, 0.06);
     box-shadow: -2px -2px 5px rgba(0, 0, 0, 0.06);
+}
+
+.ant-table-gw-text {
+    font-family: "Noto Sans Thai Bold";
+    font-weight: 900;
+    font-size: 16px;
+    color: #000;
+    /* background-color: #1a1a1a; */
 }
 

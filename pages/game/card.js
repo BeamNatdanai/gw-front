@@ -3,12 +3,15 @@ import { useState , useEffect } from 'react';
 import { Popover } from 'antd';
 import Head from 'next/head'
 import Link from 'next/link'
+import Router from 'next/router';
 import Layout from '../../components/layout'
 import sess , { getItem } from '../../lib/session';
 import UserContext from '../../context/user';
 import { isEmpty } from '../../lib/func';
 
 const Game = (props) => {
+
+    // const  useState
 
     useEffect(()=>{
         const mySess = getItem(sess.name)
@@ -26,7 +29,7 @@ const Game = (props) => {
         return (
             <div>
                 <form onSubmit={handleSubmit}>
-                    <input className="gw-input-small" placement="กรอกจำนวนแต้ม" maxLength="4" pattern="[0-9]+" title="กรอกเฉพาะตัวเลขเท่านั้น" /><br/>
+                    <input className="gw-input-block" placement="กรอกจำนวนแต้ม" maxLength="4" pattern="[0-9]+" title="กรอกเฉพาะตัวเลขเท่านั้น" /><br/>
                     <center><input className="gw-btn-main-small pointer" type="submit" value="ยืนยัน" /></center>
                 </form>
             </div>
