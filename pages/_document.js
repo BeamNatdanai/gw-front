@@ -16,7 +16,7 @@ class MyDocument extends Document {
           <link rel="stylesheet" href="/static/css/game-card.css" />
           <link rel="stylesheet" href="/static/css/media-query.css" />
         </Head>
-        <body>
+        <body style={{backgroundColor:'#333333'}}>
           <div id="fb-root"></div>
           <Main />
           <NextScript />

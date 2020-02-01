@@ -79,7 +79,7 @@ const History = (props) => {
                                 <div className="col-12">
                                     <div className="gw-card-top">
                                         <div className="row">
-                                            <div className="col-12 col-sm-4 col-md-4  offset-lg-3 col-lg-2">
+                                            <div className="col-12 col-sm-4 col-md-4  offset-lg-1 col-lg-4">
                                                 <DatePicker style={{margin:2}} className="gw-datepicker-start" defaultValue={moment()} onChange={onChange} />
                                             </div>
                                             <div className="col-12 col-sm-4 col-md-4 col-lg-2">

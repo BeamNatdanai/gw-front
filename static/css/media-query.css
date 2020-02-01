@@ -31,8 +31,11 @@
 @media (min-width: 768px) and (max-width: 1024px) {
 
     .gw-logo {
-        padding-top: 10%;
-        font-size: 24px;
+      font-size: 29px;
+    }
+
+    .gw-logo-box {
+      padding-top: 7%;
     }
 
     .gw-form {width: 60%;}
@@ -42,6 +45,14 @@
       height: 100vh;
       width: 100vw;
       text-align: center;
+    }
+
+    .menu-icon {
+      margin-right: 18px;
+    }
+
+    .gw-logo-box-mobile {
+      padding-top: 7%;
     }
 
 }
@@ -84,8 +95,8 @@
 @media (min-width: 320px) and (max-width: 480px) {
 
     .gw-container-big {
-        padding-left: 3%;
-        padding-right: 3%;
+        padding-left: 6%;
+        padding-right: 6%;
     }
 
     .gw-body-dark {
@@ -96,8 +107,11 @@
     }
 
     .gw-logo {
-        padding-top: 20%;
-        font-size: 19px;
+        font-size: 20px;
+    }
+
+    .gw-logo-box {
+      padding-top: 16%;
     }
 
     .gw-form {width: 92%;}
@@ -143,6 +157,14 @@
 
     .gw-datepicker-end {
         float: none;
+    }
+
+    .menu-icon {
+      margin-right: 18px;
+    }
+
+    .gw-logo-box-mobile {
+      padding-top: 13%;
     }
 
 }
