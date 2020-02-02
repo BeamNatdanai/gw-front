@@ -15,8 +15,9 @@ const Point = (props) => {
                     <div className="gw-body-dark">
                         <br/><br/><br/>
                         <div className="container">
-                            <Link href="/point/deposit"><button style={{marginRight:10}} className="gw-btn-lg-main pointer">เติมพอยท์</button></Link>
-                            <Link href="/point/withdraw"><button className="gw-btn-lg-main pointer">แลกพอยท์</button></Link>
+                            <p className="gw-text-h2"> ช่องทางการติดต่อ เติ่มพอยท์ </p>
+                            {/* <Link href="/point/deposit"><button style={{marginRight:10}} className="gw-btn-lg-main pointer">เติมพอยท์</button></Link> */}
+                            {/* <Link href="/point/withdraw"><button className="gw-btn-lg-main pointer">แลกพอยท์</button></Link> */}
                         </div>
                     </div>
             </Layout>
