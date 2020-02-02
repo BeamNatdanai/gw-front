@@ -85,6 +85,10 @@
         text-align: center;
     }
 
+    .offset-05 {
+      margin-left: 8.333333%;
+    }
+
 }
   
 /* 
@@ -165,6 +169,18 @@
 
     .gw-logo-box-mobile {
       padding-top: 13%;
+    }
+
+    .gw-btn-play-block {
+      margin: 2px;
+      font-weight: 500;
+      font-size: 18px;
+      height: 31px;
+      min-width: 100%;
+    }
+
+    .offset-05 {
+      margin-left: 4.333333%;
     }
 
 }

@@ -61,36 +61,36 @@ const Game = (props) => {
                                             </div>
                                         </div> */}
                                         <div className="row">
-                                            <div className="offset-1 col-2 col-sm-2 col-md-2 col-lg-2">
+                                            <div className="offset-1 col-2 offset-md-1 col-md-2 col-lg">
                                                 <button className="gw-btn-play-block pointer">1.</button>
                                             </div>
-                                            <div className="col-2 col-sm-2 col-md-2 col-lg-2">
+                                            <div className="col-2 col-md-2 col-lg">
                                                 <button className="gw-btn-play-block pointer">2.</button>
                                             </div>
-                                            <div className="col-2 col-sm-2 col-md-2 col-lg-2">
+                                            <div className="col-2 col-md-2 col-lg">
                                                 <button className="gw-btn-play-block pointer">3.</button>
                                             </div>
-                                            <div className="col-2 col-sm-2 col-md-2 col-lg-2">
+                                            <div className="col-2 col-md-2 col-lg">
                                                 <button className="gw-btn-play-block pointer">4.</button>
                                             </div>
-                                            <div className="col-2 col-sm-2 col-md-2 col-lg-2">
+                                            <div className="col-2 col-md-2 col-lg">
                                                 <button className="gw-btn-play-block pointer">5.</button>
                                             </div>
                                         </div><br/>
                                         <div className="row">
-                                            <div className="offset-1 col-2 col-sm-2 col-md-2 col-lg-2">
+                                            <div className="offset-1 col-2 offset-md-1 col-md-2 col-lg">
                                                 <p className="gw-text-h3 black text-shadow-gold ">0</p>
                                             </div>
-                                            <div className="col-2 col-sm-2 col-md-2 col-lg-2">
+                                            <div className="col-2 col-md-2 col-lg">
                                                 <p className="gw-text-h3 black text-shadow-gold ">0</p>
                                             </div>
-                                            <div className="col-2 col-sm-2 col-md-2 col-lg-2">
+                                            <div className="col-2 col-md-2 col-lg">
                                                 <p className="gw-text-h3 black text-shadow-gold ">0</p>
                                             </div>
-                                            <div className="col-2 col-sm-2 col-md-2 col-lg-2">
+                                            <div className="col-2 col-md-2 col-lg">
                                                 <p className="gw-text-h3 black text-shadow-gold ">0</p>
                                             </div>
-                                            <div className="col-2 col-sm-2 col-md-2 col-lg-2">
+                                            <div className="col-2 col-md-2 col-lg">
                                                 <p className="gw-text-h3 black text-shadow-gold ">0</p>
                                             </div>
                                         </div>
