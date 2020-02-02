@@ -55,26 +55,77 @@ const Game = (props) => {
                                         </div>
                                     </div>
                                     <div className="gw-card-tradebar">
+                                        {/* <div className="row">
+                                            <div className="col-12">
+                                                <p className="gw-text-h2 black text-shadow-gold under-line-text">ขา</p><br/>
+                                            </div>
+                                        </div> */}
                                         <div className="row">
-                                            <div className="col-3 col-sm-3 col-md-3 col-lg-3">
-                                                <Popover placement="bottomLeft" title={<p className="gw-text-h4 red text-shadow-gold">กรอกแต้ม</p>} content={<ContentPopover />} trigger="click" arrowPointAtCenter>
-                                                    <button className="gw-btn-play-block pointer">1.</button>
-                                                </Popover>
+                                            <div className="offset-1 col-2 col-sm-2 col-md-2 col-lg-2">
+                                                <button className="gw-btn-play-block pointer">1.</button>
                                             </div>
-                                            <div className="col-3 col-sm-3 col-md-3 col-lg-3">
-                                                <Popover placement="bottomLeft" title={<p className="gw-text-h4 red text-shadow-gold">กรอกแต้ม</p>} content={<ContentPopover />} trigger="click" arrowPointAtCenter>
-                                                    <button className="gw-btn-play-block pointer">2.</button>
-                                                </Popover>
+                                            <div className="col-2 col-sm-2 col-md-2 col-lg-2">
+                                                <button className="gw-btn-play-block pointer">2.</button>
                                             </div>
-                                            <div className="col-3 col-sm-3 col-md-3 col-lg-3">
-                                                <Popover placement="bottomLeft" title={<p className="gw-text-h4 red text-shadow-gold">กรอกแต้ม</p>} content={<ContentPopover />} trigger="click" arrowPointAtCenter>
-                                                    <button className="gw-btn-play-block pointer">3.</button>
-                                                </Popover>
+                                            <div className="col-2 col-sm-2 col-md-2 col-lg-2">
+                                                <button className="gw-btn-play-block pointer">3.</button>
                                             </div>
-                                            <div className="col-3 col-sm-3 col-md-3 col-lg-3">
-                                                <Popover placement="bottomLeft" title={<p className="gw-text-h4 red text-shadow-gold">กรอกแต้ม</p>} content={<ContentPopover />} trigger="click">
-                                                    <button className="gw-btn-play-block pointer">4.</button>
-                                                </Popover>
+                                            <div className="col-2 col-sm-2 col-md-2 col-lg-2">
+                                                <button className="gw-btn-play-block pointer">4.</button>
+                                            </div>
+                                            <div className="col-2 col-sm-2 col-md-2 col-lg-2">
+                                                <button className="gw-btn-play-block pointer">5.</button>
+                                            </div>
+                                        </div><br/>
+                                        <div className="row">
+                                            <div className="offset-1 col-2 col-sm-2 col-md-2 col-lg-2">
+                                                <p className="gw-text-h3 black text-shadow-gold ">0</p>
+                                            </div>
+                                            <div className="col-2 col-sm-2 col-md-2 col-lg-2">
+                                                <p className="gw-text-h3 black text-shadow-gold ">0</p>
+                                            </div>
+                                            <div className="col-2 col-sm-2 col-md-2 col-lg-2">
+                                                <p className="gw-text-h3 black text-shadow-gold ">0</p>
+                                            </div>
+                                            <div className="col-2 col-sm-2 col-md-2 col-lg-2">
+                                                <p className="gw-text-h3 black text-shadow-gold ">0</p>
+                                            </div>
+                                            <div className="col-2 col-sm-2 col-md-2 col-lg-2">
+                                                <p className="gw-text-h3 black text-shadow-gold ">0</p>
+                                            </div>
+                                        </div>
+                                        <br/><hr/><br/>
+                                        <div className="gw-container-middle">
+                                            {/* <div className="row">
+                                                <div className="col-12">
+                                                    <p className="gw-text-h2 black text-shadow-gold under-line-text">ชิป</p><br/>
+                                                </div>
+                                            </div> */}
+                                            <div className="row">
+                                                <div className="col">
+                                                    <button className="gw-btn-play-block pointer">20.-</button>
+                                                </div>
+                                                <div className="col">
+                                                    <button className="gw-btn-play-block pointer">50.-</button>
+                                                </div>
+                                                <div className="col">
+                                                    <button className="gw-btn-play-block pointer">100.-</button>
+                                                </div>
+                                                <div className="col">
+                                                    <button className="gw-btn-play-block pointer">200.-</button>
+                                                </div>
+                                                <div className="col">
+                                                    <button className="gw-btn-play-block pointer">300.-</button>
+                                                </div>
+                                                <div className="col">
+                                                    <button className="gw-btn-play-block pointer">500.-</button>
+                                                </div>
+                                                <div className="col">
+                                                    <button className="gw-btn-play-block pointer">1,000.-</button>
+                                                </div>
+                                                <div className="col">
+                                                    <button className="gw-btn-play-block pointer">2,000.-</button>
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
