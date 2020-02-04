@@ -4,6 +4,7 @@ import Head from 'next/head';
 import Link from 'next/link';
 import Router from 'next/router';
 import sess , { getItem } from '../lib/session';
+import { signUp } from '../api/user'
 
 const Signup = (props) => {
 
@@ -14,14 +15,39 @@ const Signup = (props) => {
         }
     })
 
-    const handleClickSignup = () => {
+    const handleClickSignup = async (event) => {
+        event.preventDefault();
         const member_name = document.getElementById("member_name").value
         const member_tel = document.getElementById("member_tel").value
         const member_username = document.getElementById("member_username").value
         const member_pass1 = document.getElementById("member_pass1").value
         const member_pass2 = document.getElementById("member_pass2").value
-        console.log({member_username,member_tel,member_id,member_pass1,member_pass2})
-        event.preventDefault();
+        
+        if(member_pass1 === member_pass2){
+
+            const ResSignup = await signUp({
+                user_id: member_username,
+                user_pass: member_pass1,
+                user_tel: member_tel,
+                user_name: member_name
+            })
+            console.log({ResSignup})
+            if(ResSignup.status){
+                alert("ลงทะเบียนเสร็จสิ้นค่ะ")
+                Router.push('/signin')
+            }else{
+                if(ResSignup.data.msg.code !== undefined && ResSignup.data.msg.code === 11000){
+                    alert("ชื่อบัญชีนี้ ถูกใช้แล้วค่ะ ")
+                }else{
+                    alert("เกิดปัญหาในการลงทะเบียน กรุณาลองใหม่ค่ะ หรือติดต่อเจ้าหน้าที่")
+                }
+                
+            }
+
+        }else{
+            alert("รหัสผ่านไม่ตรงกัน")
+        }
+        
     }
 
     return (
@@ -42,7 +68,7 @@ const Signup = (props) => {
                     </div>
                     <div className="col-xs-12 col-sm-12 col-md-12 col-lg-12">
                         <div className="gw-form">
-                            <form onSubmit={()=>{handleClickSignup()}}>
+                            <form action="#" onSubmit={(e)=>{handleClickSignup(e)}}>
                                 <input id="member_name" className="gw-input-middle" placeholder="ชื่อผู้เล่น" maxLength="20" type="text" pattern="[A-Za-z0-9]+" title="กรอกเฉพาะภาษาอังกฤษ และ ตัวเลขเท่านั้น" required/>
                                 <input id="member_tel" className="gw-input-middle" placeholder="เบอร์โทร" maxLength="10" type="text" pattern="[0-9]{10}" title="กรอกเฉพาะตัวเลขเท่านั้น และ ต้องมีอักขระ 10 เท่านั้น" required/>
                                 <input id="member_username" className="gw-input-middle" placeholder="ชื่อบัญชี" maxLength="16" type="text" pattern="[[A-Za-z0-9]+" title="กรอกเฉพาะภาษาอังกฤษเท่านั้น" required/>

@@ -11,7 +11,6 @@ import { isEmpty } from '../lib/func';
 const Home = (props) => {
 
     useEffect(()=>{
-
         const mySess = getItem(sess.name)
         if(mySess.token === null){
             Router.push('/')

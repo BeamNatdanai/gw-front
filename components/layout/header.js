@@ -41,7 +41,7 @@ const Header = (props) => {
                             <div className="pull-right">
                                 <div className="menu-nav-zone">
                                     <Link href="/signin"><a><button style={{marginRight:5}} className="gw-btn-default btm-menu pointer"  >เข้าสู่ระบบ</button></a></Link>
-                                    <Link href="/signup"><a><button style={{marginRight:8}} className="gw-btn-default btm-menu pointer" >ทดลอง</button></a></Link>
+                                    <Link href="/signup"><a><button style={{marginRight:8}} className="gw-btn-default btm-menu pointer" >ลงทะเบียน</button></a></Link>
                                 </div>
                             </div>
                         </div>
