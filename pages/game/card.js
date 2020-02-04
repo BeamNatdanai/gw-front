@@ -50,7 +50,7 @@ const Game = (props) => {
                                     <div className="row">
                                         <div className="col-xs-12 col-sm-12 col-md-12 col-lg-12">
                                             <div className="gw-card-frame">
-                                                <iframe className="myIframe"  src="https://www.youtube.com/embed/Ze07T5VScVg" frameBorder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
+                                                <iframe className="myIframe" src="https://www.youtube.com/embed/4fGRNq1MmlA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                                             </div>
                                         </div>
                                     </div>
