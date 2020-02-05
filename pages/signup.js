@@ -31,15 +31,17 @@ const Signup = (props) => {
                 user_tel: member_tel,
                 user_name: member_name
             })
-            console.log({ResSignup})
+
             if(ResSignup.status){
                 alert("ลงทะเบียนเสร็จสิ้นค่ะ")
                 Router.push('/signin')
             }else{
-                if(ResSignup.data.msg.code !== undefined && ResSignup.data.msg.code === 11000){
-                    alert("ชื่อบัญชีนี้ ถูกใช้แล้วค่ะ ")
-                }else{
+
+                if(ResSignup.data.msg.code === undefined && ResSignup.data.msg.code === 11000){
                     alert("เกิดปัญหาในการลงทะเบียน กรุณาลองใหม่ค่ะ หรือติดต่อเจ้าหน้าที่")
+                    
+                }else{
+                    alert("ชื่อบัญชีนี้ ถูกใช้แล้วค่ะ ")
                 }
                 
             }

@@ -3,6 +3,7 @@ import { useState } from 'react'
 import Link from 'next/link'
 import UserContext from '../../context/user'
 import { clear } from '../../lib/session'
+import { numberWithCommas } from '../../lib/func'
 
 const Header = (props) => {
 
@@ -50,7 +51,12 @@ const Header = (props) => {
                             <div className="pull-left">
                                 <div className="row gw-logo-box-mobile">
                                     <img className="menu-icon  pointer" style={{marginLeft:10}} src="/static/images/header/menu_default.svg" onClick={()=>{handleClickMenu()}} />
-                                    <p className="gw-logo">Games World</p>
+                                    <p className="gw-logo">Games World</p>   
+                                </div>
+                            </div>
+                            <div className="pull-right">
+                                <div className="row menu-nav-coin-zone">
+                                    <p className="gw-text-h5 black text-shadow-white">{`$ : ${numberWithCommas(context.state.credit)}`}</p>
                                 </div>
                             </div>
                         </div>

@@ -138,6 +138,12 @@
       margin-top: 16%;
     }
 
+    .menu-nav-coin-zone {
+      position: relative;
+      margin: 0;
+      padding-top: 28px;
+  }
+
     .menu-icon {
       width: 33px;
       height: auto;

@@ -448,6 +448,12 @@
         margin-top: 7%;
     }
 
+    .menu-nav-coin-zone {
+        position: relative;
+        margin: 0;
+        padding-top: 27px;
+    }
+
     .menu-mobile-zone {
         position: relative;
         margin: 0;

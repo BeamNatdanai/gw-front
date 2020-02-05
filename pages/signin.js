@@ -5,6 +5,7 @@ import Link from 'next/link';
 import Router from 'next/router';
 import UserContext from '../context/user';
 import sess , { getItem , setItem } from '../lib/session';
+import { signIn } from '../api/user'
 
 const Signin = (props) => {
 
@@ -15,31 +16,43 @@ const Signin = (props) => {
         }
     })
 
-    const handleClickSignin = (_context) => {
+    const handleClickSignin = async (_context) => {
+        event.preventDefault();
         const member_username = document.getElementById("member_username").value
         const member_pass = document.getElementById("member_pass").value
-        event.preventDefault();
 
-        const user = {
-            _id: '19293810',
-            name: 'Jonh',
-            username: member_username,
-            tel: '0835608224',
-            credit: 5000,
-            token: 'HF1037FHHRjj0912',
-        }
-        setItem(sess.name,user)
-        _context.updateValueObj({
-            _id: '19293810',
-            name: 'Jonh',
-            username: member_username,
-            tel: '0835608224',
-            credit: 5000,
-            token: 'HF1037FHHRjj0912',
+        const ResSignin = await signIn({
+            user_id: member_username,
+            user_pass: member_pass
         })
-        setTimeout(()=>{
-            Router.push('/home')
-        },1000)
+
+        if(ResSignin.status){
+            console.log({ResSignin})
+            alert('ยินดีต้อนรับ "'+ResSignin.data.member.user_name+'" เข้าสู่ระบบค่ะ')
+            const user = {
+                _id: ResSignin.data.member._id,
+                name: ResSignin.data.member.user_name,
+                username: ResSignin.data.member.user_id,
+                tel: ResSignin.data.member.user_tel,
+                credit: ResSignin.data.member.user_credit,
+                token: ResSignin.data.token,
+            }
+            setItem(sess.name,user)
+            _context.updateValueObj({
+                _id: '19293810',
+                name: 'Jonh',
+                username: member_username,
+                tel: '0835608224',
+                credit: 5000,
+                token: 'HF1037FHHRjj0912',
+            })
+            setTimeout(()=>{
+                Router.push('/home')
+            },1000)
+
+        }else{
+            alert('รหัสผ่าน และ ชื่อบัญชีไม่ตรงกัน')
+        }
  
     }
 

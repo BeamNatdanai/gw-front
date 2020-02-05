@@ -11,8 +11,6 @@ import { isEmpty } from '../../lib/func';
 
 const Game = (props) => {
 
-    // const  useState
-
     useEffect(()=>{
         const mySess = getItem(sess.name)
         if(mySess.token === null){
@@ -50,7 +48,7 @@ const Game = (props) => {
                                     <div className="row">
                                         <div className="col-xs-12 col-sm-12 col-md-12 col-lg-12">
                                             <div className="gw-card-frame">
-                                                <iframe className="myIframe" src="https://www.youtube.com/embed/4fGRNq1MmlA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                                <iframe className="myIframe" src={url} frameBorder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
                                             </div>
                                         </div>
                                     </div>
@@ -133,6 +131,20 @@ const Game = (props) => {
                                 <br/><br/><br/>
                             </div>
                     </Layout>
+                    <style global jsx>{`
+
+                        .ytp-share-icon {
+                            margin: auto;
+                            width: 36px;
+                            height: 36px;
+                            display: none;
+                        }
+
+                        .ytp-show-share-title .ytp-share-title {
+                            display: none;
+                        }
+
+                    `}</style>
                 </div>
             }
         </UserContext.Consumer>

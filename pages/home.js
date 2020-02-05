@@ -38,6 +38,7 @@ const Home = (props) => {
                                     </div>
                                 </div>
                             </div>
+                            <br/><br/>
                         </div>
                     </Layout>
                 </div>

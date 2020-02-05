@@ -11,7 +11,6 @@ export const signUp = async ( obj ) => {
             mode: 'cors',
             headers: {
                 'Content-Type': 'application/json',
-                'Access-Control-Allow-Origin':'*',
                 'api-key': apiKey
             },
             body: JSON.stringify(obj)
@@ -21,6 +20,33 @@ export const signUp = async ( obj ) => {
             return await { status:true , data:json }
         }else{
             return await { status:false , data:json }
+        }
+
+    } catch(err) {
+        // catches errors both in fetch and response.json
+        return await { status:false , data:err }
+    }
+        
+}
+
+export const signIn = async ( obj ) => {
+
+    try {
+
+        const response = await fetch(BaseUrl+'users/login/', {
+            method: 'POST',
+            mode: 'cors',
+            headers: {
+                'Content-Type': 'application/json',
+                'api-key': apiKey
+            },
+            body: JSON.stringify(obj)
+          })
+        const json = await response.json()
+        if(json.status){
+            return await { status:true , ...json }
+        }else{
+            return await { status:false , ...json }
         }
 
     } catch(err) {
